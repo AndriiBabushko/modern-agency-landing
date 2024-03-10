@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import { Flex } from '@chakra-ui/react';
-import { NavBar, SearchBar } from '@utils/ui';
+import { NavBar, SearchBar } from '@components//ui';
 
 export const Header: FC = () => {
   return (
