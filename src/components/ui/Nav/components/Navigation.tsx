@@ -4,22 +4,23 @@ import React, { FC } from 'react';
 import { Flex as NavContainer, List as NavList } from '@chakra-ui/react';
 import { NavItem } from './NavItem';
 interface NavigationProps {
+  gap?: string;
   isIcon?: boolean;
 }
 
-export const Navigation: FC<NavigationProps> = ({ isIcon }) => {
+export const Navigation: FC<NavigationProps> = ({ isIcon, gap }) => {
   return (
     <NavContainer
       display={{ base: 'none', md: 'flex' }}
       flex={1}
-      alignItems={'center'}
+      alignItems={'flex-end'}
       justifyContent={'flex-end'}
     >
       <NavList
         display={'flex'}
         flexDirection={'row'}
         alignItems={'flex-end'}
-        gap={'12px'}
+        gap={gap || '12px'}
       >
         <NavItem isIcon={isIcon} text={'Home'} href={'/'} />
         <NavItem isIcon={isIcon} text={'About'} href={'/about'} />

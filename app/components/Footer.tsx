@@ -10,13 +10,20 @@ import {
 } from '@chakra-ui/react';
 import { Logo } from '@components/ui';
 import { COLORS } from '@utils/constants';
+import { Navigation } from '@components/ui/Nav/components';
 
 export const Footer: FC = () => {
   return (
-    <FooterContainer flexDirection={'row'} gap={'20px'}>
+    <FooterContainer flexDirection={'row'} gap={'20px'} paddingBottom={'36px'}>
       <Logo />
-      <InfoBlock flex={1} flexDirection={'column'} gap={'10px'}>
+      <InfoBlock
+        flex={1}
+        flexDirection={'column'}
+        justifyContent={'flex-end'}
+        gap={'10px'}
+      >
         <NavBlock flexDirection={'column'}>
+          <Navigation isIcon={false} gap={'24px'} />
           <NavDivider backgroundColor={COLORS.GRAY} />
         </NavBlock>
         <CopyrightText textAlign={'end'}>
