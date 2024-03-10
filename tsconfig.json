@@ -18,7 +18,6 @@
     "incremental": true,
     "plugins": [{ "name": "next" }],
     "paths": {
-      "@app/*": ["./app/*"],
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
       "@utils/*": ["./src/utils/*"]

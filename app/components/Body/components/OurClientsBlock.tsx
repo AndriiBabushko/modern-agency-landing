@@ -1,4 +1,6 @@
-import { FC } from 'react';
+'use client';
+
+import React, { FC } from 'react';
 import {
   Flex as OurClientsBox,
   Flex as OurClientsIconsBox,
