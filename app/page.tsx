@@ -1,13 +1,13 @@
 'use server';
 
-import { Body, Footer, Header } from '@/app/components';
+import { Body, Footer, Header, Container } from '@app/components';
 
-export default function Home() {
+export default async function Home() {
   return (
-    <>
+    <Container>
       <Header />
       <Body />
       <Footer />
-    </>
+    </Container>
   );
 }
